@@ -1,0 +1,63 @@
+{
+  "name": "v750",
+  "displayName": "v750",
+  "icon": "",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "v750.unstringify",
+        "title": "unstringify v750"
+      },
+      {
+        "command": "v750.sort",
+        "title": "sort v750",
+        "shortTitle": "123"
+      },
+      {
+        "command": "v750.minify",
+        "title": "minify v750"
+      },
+      {
+        "command": "v750.format",
+        "title": "format v750"
+      }
+    ],
+    "configuration": {
+      "title": "v750",
+      "properties": {
+        "v750.enabled":{
+          "type": "boolean",
+          "default": false
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.98.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "eslint": "^9.16.0",
+    "typescript": "^5.7.2",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
