@@ -22,9 +22,17 @@ Scratchpad instance runs in a specific directory. Files created in that director
 
 To focus instance use `open '/Applications/VS Scratch/Visual Studio Scratch.app'`
 
+So assuming your scrachpad directory is `/Users/jarvis-hmac/scratchpad/` to open a file from python just do this:
+
+```python
+import subprocess
+
+with open("/Users/jarvis-hmac/scratchpad/somenew3fi2le.txt", "w") as f:
+    f.write("hey")
+subprocess.run(["open", "/Applications/VS Scratch/Visual Studio Scratch.app"])
+```
+
 
 ### json manipulation
 
 Commands to transform json: sort, format, minify, unstringify (recurively)
-
-### scratchpad emulation
