@@ -9,10 +9,10 @@ Separate instances can have different app icons (may need to give iterm full dis
 ```sh
 brew install fileicon
 wget https://github.com/dhanishgajjar/vscode-icons/raw/refs/heads/master/icns/synthwave_option_3.icns
-sudo fileicon set '/Applications/VS Scratch/Visual Studio Scratch.app' '/Users/jarvis-hmac/vscode-icons/icns/synthwave_option_3.icns'
+sudo fileicon set '/Applications/VS Scratch/Visual Studio Scratch.app' synthwave_option_3.icns
 
 wget https://github.com/dhanishgajjar/vscode-icons/raw/refs/heads/master/icns/synthwave_option_6.icns
-sudo fileicon set '/Applications/Visual Studio Code.app' '/Users/jarvis-hmac/vscode-icons/icns/synthwave_option_6.icns'
+sudo fileicon set '/Applications/Visual Studio Code.app' synthwave_option_6.icns
 
 ```
 
