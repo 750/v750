@@ -1,7 +1,9 @@
 {
   "name": "v750",
   "displayName": "v750",
-  "icon": "",
+  "repository": {
+    "url": "https://github.com/750/v750"
+  },
   "description": "",
   "version": "0.0.1",
   "engines": {
@@ -35,7 +37,7 @@
     "configuration": {
       "title": "v750",
       "properties": {
-        "v750.enabled":{
+        "v750.enableWatcher":{
           "type": "boolean",
           "default": false
         }

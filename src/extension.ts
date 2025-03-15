@@ -35,9 +35,9 @@ function write(text: any, space: number = 4) {
 export function activate(context: vscode.ExtensionContext) {
 
 	const config = vscode.workspace.getConfiguration("v750");
-	const enabled = config.get("enabled") as boolean;
+	const enableWatcher = config.get("enableWatcher") as boolean;
 
-	if (enabled) {
+	if (enableWatcher) {
 		let w = vscode.workspace.createFileSystemWatcher("**/*", false, true, true);
 		w.onDidCreate((e) => {
 			vscode.workspace.openTextDocument(e.path).then(document => vscode.window.showTextDocument(document));
