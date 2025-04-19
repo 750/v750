@@ -91,9 +91,6 @@ export function activate(context: vscode.ExtensionContext) {
 					t = vscode.window.createTerminal("v750");
 				}
 				t.sendText(substitute(value.command));
-				// setTimeout(() => t!.dispose(), 5000);
-
-				// vscode.window.showInformationMessage(value.command);
 			}
 		});
 	});
